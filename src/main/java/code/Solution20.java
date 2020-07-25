@@ -1,6 +1,6 @@
 package code;
 import java.util.*;
-public class Solution2 {
+public class Solution20 {
     public boolean isValid(String s) {
         Stack<Character> temp = new Stack<Character>();
         temp.push('#');
