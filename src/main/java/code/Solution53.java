@@ -2,7 +2,7 @@ package code;
 
 public class Solution53 {
     public int maxSubArray(int[] nums) {
-        int ans = nums[0];
+        int max = nums[0];
         int sum = 0;
         for (int num: nums) {
             if (sum > 0) {
@@ -10,8 +10,8 @@ public class Solution53 {
             } else {
                 sum = num;
             }
-            ans = Math.max(ans, sum);
+            max = Math.max(max, sum);
         }
-        return ans;
+        return max;
     }
 }
